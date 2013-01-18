@@ -1,0 +1,65 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$color-main-bg: #565656;
+$color-content-bg: #fefefe;
+$color-text: #282425;
+
+$size-content-width: 1100px;
+$size-content-padding: 58px;
+$size-logo-width: 150px;
+
+body {
+	background: $color-main-bg;
+	color: $color-text;
+	font-family: gentium;
+}
+
+#content-center {
+	background: $color-content-bg;
+	margin: 0 auto;
+	min-height: 400px;
+	width: $size-content-width;
+
+	.content-section {
+		margin-left: $size-logo-width;
+	}
+}
+
+#rpgr-logo {
+	background: $color-text;
+	color: $color-content-bg;
+	float: left;
+	font-size: 2.8em;
+	font-weight: bold;
+	padding: 20px 0;
+	position: relative;
+	text-align: center;
+	width: $size-logo-width;
+
+	&::after {
+		border: 0px solid transparent;
+		border-width: $size-logo-width/8 $size-logo-width/2;
+		border-top-color: #282425;
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+	}
+}
+
+h1, h2, h3 {
+	background: #ebebec;
+	color: #6d6e6f;
+	text-transform: uppercase;
+	padding: 12px 16px;
+}
+
+h1 { font-size: 1.4em; }
+h2 { font-size: 1.2em; }
+h3 { font-size: 1.0em; }

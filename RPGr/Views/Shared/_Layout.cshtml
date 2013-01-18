@@ -4,11 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/stylesheets/site.css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    @RenderBody()
+	<div id="content-center">
+		<div id="rpgr-logo">RPGr</div>
+		<section class="content-section">
+			@RenderBody()
+		</section>
+	</div>
 
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
