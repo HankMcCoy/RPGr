@@ -71,38 +71,57 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   background: #565656;
   color: #282425;
-  font-family: gentium;
+  font-family: calibri;
 }
 
 /* line 22, ../sass/site.scss */
 #content-center {
-  background: #fefefe;
   margin: 0 auto;
-  min-height: 400px;
   width: 1100px;
 }
-/* line 28, ../sass/site.scss */
+/* line 26, ../sass/site.scss */
 #content-center .content-section {
-  margin-left: 150px;
+  background: #fefefe;
+  border: 1px solid #444;
+  border-top: 0;
+  margin-left: 220px;
+  min-height: 400px;
 }
 
-/* line 33, ../sass/site.scss */
-#rpgr-logo {
-  background: #282425;
-  color: #fefefe;
+/* line 35, ../sass/site.scss */
+#sidebar {
   float: left;
-  font-size: 2.8em;
+  width: 220px;
+}
+/* line 39, ../sass/site.scss */
+#sidebar nav {
+  padding-top: 27.5px;
+  color: #fefefe;
+}
+/* line 43, ../sass/site.scss */
+#sidebar nav li {
+  padding: 12px 0;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+/* line 51, ../sass/site.scss */
+#rpgr-logo {
+  background: #313133;
+  color: #fefefe;
+  font-family: gentium;
+  font-size: 3.4em;
   font-weight: bold;
   padding: 20px 0;
   position: relative;
   text-align: center;
-  width: 150px;
+  width: 100%;
 }
-/* line 44, ../sass/site.scss */
+/* line 62, ../sass/site.scss */
 #rpgr-logo::after {
   border: 0px solid transparent;
-  border-width: 18.75px 75px;
-  border-top-color: #282425;
+  border-width: 27.5px 110px;
+  border-top-color: #313133;
   content: '';
   position: absolute;
   top: 100%;
@@ -110,25 +129,26 @@ body {
   right: 0;
 }
 
-/* line 56, ../sass/site.scss */
+/* line 74, ../sass/site.scss */
 h1, h2, h3 {
   background: #ebebec;
   color: #6d6e6f;
+  font-family: gentium;
   text-transform: uppercase;
-  padding: 12px 16px;
+  padding: 16px 32px;
 }
 
-/* line 63, ../sass/site.scss */
+/* line 82, ../sass/site.scss */
 h1 {
-  font-size: 1.4em;
+  font-size: 2.0em;
 }
 
-/* line 64, ../sass/site.scss */
+/* line 83, ../sass/site.scss */
 h2 {
-  font-size: 1.2em;
+  font-size: 1.6em;
 }
 
-/* line 65, ../sass/site.scss */
+/* line 84, ../sass/site.scss */
 h3 {
-  font-size: 1.0em;
+  font-size: 1.3em;
 }
